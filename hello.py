@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+File name    : hellp.py
+Author       : miaoyc
+Create date  : 2021/12/9 11:15 上午
+Description  : tornado demo 
+"""
+
 import tornado.httpserver
 import tornado.ioloop
 import tornado.options
@@ -13,7 +20,7 @@ define("port", default=8888, help="run on the given port", type=int)
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-    	self.write("Hello, vicky!")
+    	self.write("Hello, miaoyc!")
 
 
 def main():
